@@ -15,6 +15,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 
 </head>
 
@@ -24,55 +25,91 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
+      <div class="sidebar-heading">Make Resume</div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-user-friends"></i> Personal Info</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-info-circle"></i> Summary</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-briefcase"></i> Work Experience</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-school"></i> Education</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-cogs"></i> Skills</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-certificate"></i> Certification</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-award"></i> Honour & Awards</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-tasks"></i> Research/Projects</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-university"></i> Training</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-user-plus"></i> Additional Information</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
       <div class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+        <h2 class="text-center text-muted">Contact Details</h2>
+        <div class="col">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="Enter First Name" required>
+              <small id="firstNameHelp" class="form-text text-muted">Check your spellings, use your initials carefully, if any. A mistake in your name isn’t appreciated on a resume.</small>
+              <div class="invalid-feedback">
+                  Please provide first name.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Enter Last Name" required>
+              <small id="lastNameHelp" class="form-text text-muted">Check your spellings, use your initials carefully, if any. A mistake in your name isn’t appreciated on a resume.</small>
+              <div class="invalid-feedback">
+                Please provide last name.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+              <small id="emailHelp" class="form-text text-muted">Use a professional email id (Eg- rini.samuel@yahoo.com). Refrain from using informal ids (Eg- youfindme007@yahoo.com).</small>
+              <div class="invalid-feedback">
+                Please provide email.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mobile">Mobile</label>
+              <input type="number" class="form-control" id="mobile" aria-describedby="mobile" placeholder="Enter mobile no" required>
+              <small id="mobile" class="form-text text-muted">Choose your country code carefully for smooth communication</small>
+              <div class="invalid-feedback">
+                Please provide mobile no.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="AlternateMobile">Alternate mobile</label>
+              <input type="number" class="form-control" id="AlternateMobile" aria-describedby="alternate" placeholder="Enter mobile no">
+              <small id="alternate" class="form-text text-muted">Choose your country code carefully for smooth communication</small>
+            </div>
+            <div class="form-group">
+              <label for="skypeUsername">Skype username</label>
+              <input type="text" class="form-control" id="skypeUsername" aria-describedby="skype" placeholder="Enter skype username" >
+              <small id="skype" class="form-text text-muted">Use a professional username. Employers may use Skype for interviews (Eg- rini_samuel0309)</small>
+            </div>
+            <div class="form-group">
+              <label for="linkedinUrl">Linkedin url</label>
+              <input type="text" class="form-control" id="linkedinUrl" aria-describedby="linkedin" placeholder="Enter Linkedin Url">
+              <small id="linkedin" class="form-text text-muted">This is a direct link to your profile, therefore, do not merely mention your username copy the URL from your profile (Eg- https://www.linkedin.com/in/rini-samuel-009/).</small>
+            </div>
+            <div class="form-group">
+              <label for="Address">Address</label>
+              <textarea class="form-control" id="Address" aria-describedby="addressHelp" placeholder="Enter Address" required></textarea>
+              <small id="addressHelp" class="form-text text-muted">provide a precise address, with correct landmarks, house number and Lane/ street/ cross (Eg- line1- 12/B, Srinivas Apartments, Line2- R.B.I. Layout, Opp. Brigade Millenium, Line3- J.P. Nagar 7th phase, Bengaluru, India.</small>
+              <div class="invalid-feedback">
+                Please provide address.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pin">Pin</label>
+              <input type="email" class="form-control" id="pin" aria-describedby="pinHelp" placeholder="Enter email">
+              <small id="pinHelp" class="form-text text-muted">Provide the correct Pin Code / Zip Code. </small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
@@ -90,6 +127,20 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
+    (function() {
+      window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
   </script>
 
 </body>
